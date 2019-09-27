@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico');
+
+/*------ Estilos base-------*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.ff {
+    /*(font-family)*/
+    font-family: 'Pacifico', cursive;
+}
+
+.title {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Pacifico';
+    padding-bottom: 20px;
+}
+
+/*---------banner---------*/
+.banner {
+    position: relative;
+    z-index: -1500;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner--img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.banner--content {
+    width: 90%;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 60%;
+    left: 50%;
+    font-weight: bold;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*------------- Estilos Main -------------*/
+.main--txt {
+    color: #fff;
+}
+
+.main--title {
+    padding-top: 15px;
+    color: #fff;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+.maincontainer {
+    border: 1px solid #333;
+    position: relative;
+    width: 250px;
+    height: 332px;
+    margin: 30px;
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+.title-cards {
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.title-cards span {
+    color: #DC3545;
+    font-size: 33px;
+}
+
+.txt-cards {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*-------------- fin main -----------------*/
+/*---------- maps google----------*/
+.map {
+    display: none;
+}
+
+.maps {
+    width: 100%;
+}
+
+.mapDnone {
+    width: 100%;
+    display: block;
+}
+
+/*----------------Estilos footer-----------------*/
+.list-footer {
+    font-size: 30px;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.border-footer {
+    padding: 20px;
+    border-top: 1px solid rgba(155, 153, 153, 0.5);
+    border-bottom: 1px solid rgba(155, 153, 153, 0.5);
+}
+
+.title-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.faceLi:hover {
+    color: #4267B2;
+}
+
+.twLi:hover {
+    color: #5DA9DD;
+}
+
+.igLi:hover {
+    color: #C43189;
+}
+
+.mailLi:hover {
+    color: rgba(236, 22, 22, 0.5);
+}
+
+.phoneLi:hover {
+    color: rgba(43, 223, 19, 0.5);
+}
+
+.icons-color {
+    color: #fafafa;
+}
+
+/*-------------Estilos de menu.html-----------*/
+.imgBoxx {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.btn-enviar {
+    color: #DC3545;
+    text-decoration: none;
+}
+
+.btn-enviar:hover {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.aderezo {
+    width: 100%;
+    background: #FFFFFF;
+    text-align: left;
+}
+
+.minh-100 {
+    height: 100vh;
+}
+
+/*---------Estilos de nosotros.html-------------*/
+
+/*---------Estilos de galeria.html-------------*/
+.wcard {
+    width: 20rem;
+    margin-top: 25px
+}
+
+.mtop8 {
+    margin-top: 8%;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+.more {
+    display: none;
+}
+
+/*---------Estilos de contacto.html-------------*/
+.bodycontact {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-image: url(../img/contacto/banner-contacto.jpg);
+}
+
+.h1contact {
+    font-size: 40px;
+    color: white;
+    margin-top: 250px;
+}
+
+.txtcontact {
+    font-size: 17px;
+    color: white;
+}
+
+.h3contact {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.pencil {
+    font-size: 35px;
+    color: white;
+    float: right;
+    margin-top: 10px;
+}
+
+.col-md-5 {
+    margin-top: 80px;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.label {
+    font-weight: normal;
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.inputContact {
+    width: 100%;
+}
+
+.form-input-mensaje {
+    margin-right: 0px;
+}
+
+#btnRefresh {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/*------------------------------------------RESPONSIVE----------------------------------------------*/
+/*-------------Responsive Extra small (Phone, menos de 576px)---------------*/
+@media only screen and (max-width: 575.98px) and (min-width: 319px) {
+    .maincontainer {
+        width: 100px;
+        height: 132px;
+        margin: 20px;
+    }
+
+    .title-cards {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .title-cards span {
+        color: #DC3545;
+        font-size: 1rem;
+    }
+
+    .txt-cards {
+        font-size: 0.6rem;
+    }
+
+    /*---------ESTILOS FOOTER---------*/
+    .liFooter {
+        margin-left: 10px;
+    }
+
+    /*------------------Nosotros.html----------------*/
+    .fontSizeSmall {
+        font-size: 1.2rem;
+    }
+
+    /*---------Estilos de galeria.html-------------*/
+    .wcard {
+        width: 10rem;
+    }
+
+    /*---------Estilos de contacto.html-------------*/
+    .h3contact {
+        font-size: 20px;
+        color: white;
+        margin-top: 25px;
+    }
+
+    .pencil {
+        font-size: 35px;
+        color: white;
+        float: right;
+        margin-top: -45px;
+    }
+
+}
+
+/*-------------Responsive small (Phone, menos de 768px)---------------*/
+@media only screen and (max-width: 767.98px) and (min-width: 575.98px) {
+
+    /*----------ESTILOS CARDS---------*/
+    .maincontainer {
+        width: 170px;
+        height: 225px;
+    }
+
+    .title-cards {
+        font-size: 23px;
+    }
+
+    .title-cards span {
+        color: #DC3545;
+        font-size: 23px;
+    }
+
+    .txt-cards {
+        font-size: 0.8rem;
+    }
+
+    /*---------ESTILOS FOOTER---------*/
+    .liFooter {
+        margin: 20px;
+    }
+
+    /*------------------Nosotros.html----------------*/
+    .fontSizeSmall {
+        font-size: 1.3rem;
+    }
+
+    /*---------Estilos de galeria.html-------------*/
+    .wcard {
+        width: 14rem;
+    }
+}
+
+/*-------------Medium devices (tablets, menos de 992px)-------------*/
+@media only screen and (min-width:767.98px) and (max-width: 991.98px) {
+
+    /*estilos cards index */
+    .maincontainer {
+        width: 180px;
+        height: 239px;
+        margin: 20px;
+    }
+
+    .title-cards {
+        font-size: 23px;
+    }
+
+    .title-cards span {
+        color: #DC3545;
+        font-size: 23px;
+    }
+
+    .txt-cards {
+        font-size: 0.9rem;
+    }
+
+    /*---------ESTILOS FOOTER---------*/
+    .liFooter {
+        margin-left: 20px;
+    }
+
+    /*------------------Nosotros.html----------------*/
+    .fontSizeSmall {
+        font-size: 1.9rem;
+    }
+
+    /*---------Estilos de galeria.html-------------*/
+    .wcard {
+        width: 18rem;
+    }
+}
+
+/*-----------------Large devices (desktops, mnenos de 1200px)-------------*/
+@media only screen and (min-width:991.98px) and (max-width: 1199.98px) {
+    .maincontainer {
+        width: 200px;
+        height: 265px;
+        margin: 20px;
+    }
+
+    .txt-cards {
+        font-size: 1rem;
+    }
+
+    .title-cards {
+        font-size: 23px;
+    }
+
+    .title-cards span {
+        color: #DC3545;
+        font-size: 23px;
+    }
+
+    /*---------ESTILOS FOOTER---------*/
+    .liFooter {
+        margin-left: 40px;
+    }
+
+    /*------------------Nosotros.html----------------*/
+    .fontSizeSmall {
+        font-size: 1.9rem;
+    }
+
+    /*---------Estilos de galeria.html-------------*/
+    .wcard {
+        width: 20rem;
+    }
+}
